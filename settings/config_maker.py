@@ -15,7 +15,7 @@ VK_num = input('VK_phone_number: ')
 VK_pass = input('VK_password: ')
 VK_group_id = input('VK_group_id: ')
 
-with open('/' + path + '/settings/config.py', 'w') as config:
+with open('config.py', 'w') as config:
     config.write("DS_settings = {    'token':" + DS_token + ",    'bot': " + DS_name + ",    'id': "  + DS_channel + " ,    'prefix': " + prefix + "} "
                 "\n TG_settings = {    'token': " + TG_token + "    'channel_id': " + TG_channel_id + ",    'prefix': " + prefix + "}"
                 "\nVK_settings = {    'num': " + VK_num + "    'pass': " + VK_pass + ", 'group: '" + VK_group_id + " '}")
